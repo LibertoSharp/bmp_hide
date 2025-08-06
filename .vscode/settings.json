@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "bmp_file.h": "c",
+        "common.h": "c",
+        "compare": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
