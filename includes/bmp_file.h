@@ -5,6 +5,8 @@
 #include <sys/types.h>
 #include <fcntl.h>
 
+#include "dict.h"
+
 typedef struct s_bmp_file
 {
     struct stat *metadata;
@@ -17,5 +19,7 @@ unsigned char read_8(t_bmp_file file, int address);
 unsigned short read_16(t_bmp_file file, int address);
 unsigned int read_32(t_bmp_file file, int address);
 unsigned long long read_64(t_bmp_file file, int address);
+
+t_entry *init();
 
 #endif
