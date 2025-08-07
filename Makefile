@@ -16,7 +16,7 @@ HEADERS = $(wildcard $(INC_DIR)/*.h)
 
 # Compilatore e flag
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
+CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR) -lm
 
 # Regola di default
 all: $(PROGRAM_NAME)

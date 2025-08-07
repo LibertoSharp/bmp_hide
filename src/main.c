@@ -25,18 +25,6 @@
 
 int hide_in_image(char *path_image_in, char *secret, int width, int height, unsigned char *canvas)
 {
-    int fd = open(path_image_in, O_RDONLY);
-    int read_bytes;
-
-    if (path_image_in == NULL)
-    {
-        printf("Error: no path assigned for the secret\n");
-        return (1);
-    }
-    read_bytes = read(fd, secret, BUFF_SIZE - 1);
-    if (read_bytes > 0)
-        secret[read_bytes] = '\0';
-    close(fd);
     for (int i = 0; i < height; i += 20)
     {
         for (int j = 0; j < width; j += 20)

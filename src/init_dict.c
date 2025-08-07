@@ -38,6 +38,5 @@ t_entry *init()
 			i++;
 		}
 	}
-	arr[i] = NULL;
 	return (arr);
 }
